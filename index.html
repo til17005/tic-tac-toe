@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="main.css" rel="stylesheet" />
+    <meta
+      name="description"
+      content="CIT 381: Business Intel and Analytics -- Brigham Young University-Idaho"
+    />
     <title>Tic Tac Toe</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
-    <header></header>
+  <body onload="myLoader()">
+    <header>
+      <h2>Tic-Tac-Toe</h2>
+    </header>
+
     <main>
-      <div class="container">
+      <div id="loader"></div>
+
+      <div id="myContent" class="container">
         <div id="board"></div>
 
         <div class="field">
@@ -21,7 +30,7 @@
         </div>
 
         <div class="field">
-          <label for="depth">Depth (Difficulty)</label>
+          <label for="depth">Difficulty</label>
           <select id="depth">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -34,7 +43,13 @@
         <button id="newGame">New Game</button>
       </div>
     </main>
-    <footer></footer>
+
+    <footer>
+      <p>&copy; 2021 - Matthew M. Tilton</p>
+      <p><a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+    </footer>
+
+    <script type="text/javascript" src="js/loader.js"></script>
     <script type="module" src="js/script.js"></script>
   </body>
 </html>
